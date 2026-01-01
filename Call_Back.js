@@ -37,17 +37,38 @@
 // Data();
 
 
+// function A() {
+//     console.log("This is A function.......");
+
+//     function B() {
+//         console.log("This is B Function.....");
+
+
+
+//     }
+//     B();
+// };
+
+// A();  
+
+
 function A() {
-    console.log("This is A function.......");
 
-    function B() {
-        console.log("This is B Function.....");
+    setTimeout(() => {
+        console.log(" A is Runing....."); 
+
+        B();
+    }, 2000)
 
 
-          
-    }
-           B();
 };
- 
- A();
-  
+
+
+function B() {
+    console.log(" B is Runing ... ")
+}
+
+
+A();
+
+
